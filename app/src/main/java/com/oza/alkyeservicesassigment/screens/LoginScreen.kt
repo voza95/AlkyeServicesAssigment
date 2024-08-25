@@ -1,5 +1,6 @@
 package com.oza.alkyeservicesassigment.screens
 
+import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -16,6 +17,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -108,7 +110,7 @@ fun LoginScreen(navController: NavController) {
                 Text("Login")
             }
             Spacer(modifier = Modifier.height(20.dp))
-            ElevatedButton(onClick = {
+            TextButton(onClick = {
 
             }) {
                 Text(
