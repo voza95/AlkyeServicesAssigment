@@ -8,16 +8,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.sp
+import com.oza.alkyeservicesassigment.R
+import com.oza.alkyeservicesassigment.ui.theme.strawfordFontFamily
 
 @Composable
 fun UserScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Blue),
+            .background(colorResource(R.color.app_bg)),
         contentAlignment = Alignment.CenterStart
     ) {
-        Text(text = "Profile", fontSize = 22.sp)
+        Text(text = "Profile Screen", fontSize = 22.sp, modifier = Modifier.fillMaxSize(), fontFamily = strawfordFontFamily)
     }
 }

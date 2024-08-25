@@ -91,7 +91,7 @@ fun LoginScreen(navController: NavController) {
         ) {
             Button(
                 onClick = {
-                    //your onclick code here
+                    Toast.makeText(navController.context, "Under implementation", Toast.LENGTH_SHORT).show()
                 },
                 colors = ButtonDefaults.buttonColors(Color.Black),
                 shape = RoundedCornerShape(10.dp),
@@ -111,7 +111,7 @@ fun LoginScreen(navController: NavController) {
             }
             Spacer(modifier = Modifier.height(20.dp))
             TextButton(onClick = {
-
+                Toast.makeText(navController.context, "Under implementation", Toast.LENGTH_SHORT).show()
             }) {
                 Text(
                     "Terms",
